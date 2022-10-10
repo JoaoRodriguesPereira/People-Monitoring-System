@@ -1,0 +1,160 @@
+{
+  "divisões": [
+    {
+      "nome": "0.1",
+      "tipo": "Sala de aulas",
+      "lotação" : 20,
+      "acesso" : ["DOCENTE", "ALUNO"],
+      "saída" : false
+    },
+    {
+      "nome": "SA",
+      "tipo": "Serviços Académicos",
+      "lotação" : 5,
+      "acesso" : ["FUNCIONARIO"],
+      "saída" : false
+    },
+    {
+      "nome": "Entrada principal",
+      "tipo": "Entrada",
+      "lotação" : 5,
+      "acesso" : ["FUNCIONARIO", "DOCENTE", "ALUNO"],
+      "saída" : true
+    },
+    {
+      "nome": "0.3",
+      "tipo": "Sala de aulas",
+      "lotação" : 20,
+      "acesso" : ["DOCENTE", "ALUNO"],
+      "saída" : false
+    },
+    {
+      "nome": "1.2",
+      "tipo": "Gabinete",
+      "lotação" : 4,
+      "acesso" : ["DOCENTE"],
+      "saída" : false
+    },
+    {
+      "nome": "1.4A",
+      "tipo": "Gabinete",
+      "lotação" : 4,
+      "acesso" : ["DOCENTE"],
+      "saída" : false
+    },
+    {
+      "nome": "1.5",
+      "tipo": "Lab. Simulação",
+      "lotação" : 15,
+      "acesso" : ["DOCENTE", "ALUNO"],
+      "saída" : false
+    },
+    {
+      "nome": "CI",
+      "tipo": "Centro de Informática",
+      "lotação" : 3,
+      "acesso" : ["FUNCIONARIO"],
+      "saída" : false
+    },
+    {
+      "nome": "Piso 0",
+      "tipo": "Corredor",
+      "lotação" : 30,
+      "acesso" : ["FUNCIONARIO", "DOCENTE", "ALUNO"],
+      "saída" : false
+    },
+    {
+      "nome": "Piso 1",
+      "tipo": "Corredor",
+      "lotação" : 30,
+      "acesso" : ["FUNCIONARIO", "DOCENTE", "ALUNO"],
+      "saída" : false
+    },
+    {
+      "nome": "Corredor de acesso para cantina",
+      "tipo": "Corredor",
+      "lotação" : 30,
+      "acesso" : ["FUNCIONARIO", "DOCENTE", "ALUNO"],
+      "saída" : true
+    },
+    {
+      "nome": "Cantina",
+      "tipo": "Cantina",
+      "lotação" : 30,
+      "acesso" : ["FUNCIONARIO", "DOCENTE", "ALUNO"],
+      "saída" : false
+    },
+    {
+      "nome": "CIICESI",
+      "tipo": "Centro de Investigação",
+      "lotação" : 30,
+      "acesso" : ["DOCENTE"],
+      "saída" : false
+    },
+    {
+      "nome": "Área de refeitório",
+      "tipo": "Corredor",
+      "lotação" : 30,
+      "acesso" : ["FUNCIONARIO", "DOCENTE", "ALUNO"],
+      "saída" : true
+    }
+  ],
+  "caminhos": [
+    {
+      "de": "Entrada principal",
+      "para": "Piso 0"
+    },
+    {
+      "de": "Piso 0",
+      "para": "0.1"
+    },
+    {
+      "de": "Piso 0",
+      "para": "SA"
+    },
+    {
+      "de": "Piso 0",
+      "para": "0.3"
+    },
+    {
+      "de": "Piso 0",
+      "para": "Piso 1"
+    },
+    {
+      "de": "Piso 1",
+      "para": "1.2"
+    },
+    {
+      "de": "Piso 1",
+      "para": "1.4A"
+    },
+    {
+      "de": "Piso 1",
+      "para": "1.5"
+    },
+    {
+      "de": "Piso 1",
+      "para": "Corredor de acesso para cantina"
+    },
+    {
+      "de": "Corredor de acesso para cantina",
+      "para": "Cantina"
+    },
+    {
+      "de": "Cantina",
+      "para": "Área de refeitório"
+    },
+    {
+      "de": "Área de refeitório",
+      "para": "CIICESI"
+    },
+    {
+      "de": "Área de refeitório",
+      "para": "Entrada principal"
+    },
+    {
+      "de": "CI",
+      "para": "Piso 1"
+    }
+  ]
+}
